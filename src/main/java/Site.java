@@ -73,7 +73,6 @@ public class Site {
     public void courseSelection(WebDriver driver) {
 
         List<WebElement> CoursesId = driver.findElements(By.className("multiline"));
-        System.out.println(CoursesId.size());
 
         for (int i = 0; i < CoursesId.size(); i++) {
             System.out.println(i + ". " + CoursesId.get(i).getText());
